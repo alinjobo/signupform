@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    
+}
+#bg{
+    
+    max-width: 220vh;
+    max-height: 98vh;
+
+}
+.imgsec{
+    display: flex;
+    
+    max-width: 720px;
+}
+.logo{
+    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25vh;
+    max-height: 40vh;
+    width: 60vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#logo{
+    
+   
+}
+.hero{
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.input{
+    display: flex;
+    flex-direction: column;
+   
+}
+.set{
+    display: flex;
+    gap: 60px;
+}
+input{
+   
+    
+}
+.main{
+    display: flex;
+}
