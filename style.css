@@ -1,4 +1,13 @@
+@font-face {
+    font-family: norse;
+    src: url(./Norse-Bold.otf);
+}
+
+
+
+
 body{
+    
     margin: 0px;
 }
 
@@ -10,27 +19,33 @@ body{
 }
 #bg{
     
-    max-width: 220vh;
-    max-height: 98vh;
+    width: 220vh;
+    height: 100vh;
 
 }
 .imgsec{
     display: flex;
     
-    max-width: 720px;
+    width: 720px;
 }
 .logo{
-    
+    flex: 1;
+    align-self: center;
+    color:white;
+    font-size: 100px;
+    font-family: norse;
     display: flex;
+    align-items: center;
     justify-content: center;
-    position: absolute;
+    position: absolute; 
     top: 25vh;
     max-height: 40vh;
-    width: 60vh;
+    width: 720px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 #logo{
-    
+    display: flex;
+    max-height: 40vh;
    
 }
 .hero{
@@ -39,7 +54,7 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     
 }
 .input{
@@ -50,11 +65,51 @@ body{
 .set{
     display: flex;
     gap: 60px;
+    padding-bottom: 40px;
 }
 input{
    
-    
+   width: 16rem;
+   height: 1.7rem;
+   border: 2px solid #E5E7EB;
+    border-radius: 3%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+.form{
+    display: flex;
+    gap: 20px;
 }
 .main{
     display: flex;
+    gap:0px;
+}
+button{
+    background-color: #596D48;
+    color: white;
+    font-size: larger;
+    width: 26vh;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+}
+input:hover{
+    border: 2px solid rgb(140, 176, 209);
+}
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+span{
+    color: red;
+    visibility: hidden;
 }
